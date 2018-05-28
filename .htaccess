@@ -9,7 +9,7 @@ RewriteEngine on
 #--------------------------------------------------
 
 # Page d'accueil :
-RewriteRule ^(.*)$ home.php/$1 [L]
+RewriteRule $  home.php [L]
 RewriteRule ^accueil$   home.php [L]
 
 
