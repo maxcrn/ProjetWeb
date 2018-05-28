@@ -25,11 +25,14 @@ function loginM($pseudo,$pass){
 
 function isConnected($pseudo, $pass, $idMembre){
 	$db = dbConnect();
-	$req = $db->prepare('SELECT passMembre FROM Membre WHERE pseudoMembre = ? AND idMembre = ?');
-	$req->execute(array($pseudo, $idMembre));
-	$res = $req->fetch();
-	$isPasswordCorrect = password_verify($pass, $res['passMembre']);
-	return $isPasswordCorrect;
+	$req = $db->prepare('SELECT * FROM Membre WHERE pseudoMembre = ? AND idMembre = ? AND passMembre = ?');
+	$req->execute(array($pseudo, $idMembre, $pass));
+	if($req->rowCount() > 0){
+		return true;
+	}
+	else{
+		return false;
+	}
 }
 
 function isAdminM($pseudoMembre, $passMembre, $idMembre){

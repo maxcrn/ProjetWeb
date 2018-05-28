@@ -1,0 +1,7 @@
+{
+    "name": "carin/gestiontournois",
+    "description": "Site de gestion de tournois",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {}
+}

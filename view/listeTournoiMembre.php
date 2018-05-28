@@ -29,7 +29,7 @@
 		?>
 		<td>
 			<form method="get" action="accueil">
-				<input type=hidden value = gererTournoi name=action>
+				<input type=hidden value = listeEquipesTournoi name=action>
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
 				<input type=submit value="Voir équipes">
 			</form>

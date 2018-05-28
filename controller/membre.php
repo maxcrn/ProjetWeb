@@ -35,10 +35,11 @@ function login(){
 	$res = $req->fetch();
 	$isPasswordCorrect = password_verify($pass, $res['passMembre']);
 	$idMembre=$res['idMembre'];
+	$passHash = $res['passMembre'];
 	if($isPasswordCorrect){
 		setcookie('pseudo', $pseudo, time() + 365*24*3600, null, null, false, true);
 		setcookie('id', $idMembre, time() + 365*24*3600, null, null, false, true);
-		setcookie('pass', $pass, time() + 365*24*3600, null, null, false, true);
+		setcookie('pass', $passHash, time() + 365*24*3600, null, null, false, true);
 		require('view/loginOk.php');
 	}
 	else{
