@@ -1,8 +1,19 @@
 <?php
 
 function dbConnect(){
-	$db = new PDO('mysql:host=localhost;dbname=projetTest;charset=utf8', 'maxime', 'maxime');
-	return $db;
+	$url = getenv('JAWSDB_URL');
+	$dbparts = parse_url($url);
+
+	$hostname = $dbparts['host'];
+	$username = $dbparts['user'];
+	$password = $dbparts['pass'];
+	$database = ltrim($dbparts['path'],'/');
+
+	$conn = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
+	return $conn
+
+	//$db = new PDO('mysql:host=localhost;dbname=projetTest;charset=utf8', 'maxime', 'maxime');
+	//return $db;
 }
 
 function getTournois(){
