@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^inconnu$  /tests/Projet/view/test.html [L]
+ErrorDocument 404 /test/Projet/view/404.php

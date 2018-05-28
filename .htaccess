@@ -1,0 +1,27 @@
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# Page d'accueil :
+RewriteRule ^accueil$   home.php [L]
+
+
+# Page de tournoi :
+RewriteRule ^tournoi-([0-9]+)$   home.php?action=gererTournoi&tournoi=$1 [L]
+RewriteRule ^ajoutTournoi$  home.php?action=ajoutTournoi [L]
+RewriteRule ^rechercheTournoi/([0-9]+)/([a-z]+)$  home.php?action=rechercheEquipeTournoi&nomRechercheEquipeTournoi=$2&idTournoi=$1 [L]
+RewriteRule ^modifEquipeTournoi$  home.php?action=modifEquipeTournoi [L]
+RewriteRule ^suppEquipeTournoi$  home.php?action=suppEquipeTournoi [L]
+RewriteRule ^ajoutEquipeTournoi$  home.php?action=ajoutEquipeTournoi [L]
+RewriteRule ^listeMembres$  home.php?action=listeMembres [L]
+RewriteRule ^deconnexion$  home.php?action=deconnexion [L]
+RewriteRule ^listeEquipes/([0-9]+)$  home.php?action=gererTournoi&tournoi=$1
+RewriteRule ^pageModifTournoi/([0-9]+)$  home.php?action=pageModifTournoi&tournoi=$1 [L]
+RewriteRule ^suppTournoi$  home.php?action=suppTournoi [L]
+RewriteRule ^creerTournoi$  home.php?action=creerTournoi [L]
