@@ -10,7 +10,7 @@ function dbConnect(){
 	$database = ltrim($dbparts['path'],'/');
 
 	$conn = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
-	return $conn
+	return $conn;
 
 	//$db = new PDO('mysql:host=localhost;dbname=projetTest;charset=utf8', 'maxime', 'maxime');
 	//return $db;
