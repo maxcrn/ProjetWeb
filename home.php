@@ -19,7 +19,6 @@ if(isset($_COOKIE['pseudo']) AND isset($_COOKIE['pass']) AND isset($_COOKIE['id'
 	    	gererTournoi();
 	    }
 	    else if($_GET['action'] == 'rechercheTournoi' AND isset($_GET['nomRechercheTournoi'])){
-	    	echo 'coucou home ';
 	    	rechercheTournoi();
 	    }
 	    else if($_GET['action'] == 'modifTournoi' AND isset($_POST['_METHOD'])){
