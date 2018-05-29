@@ -58,6 +58,7 @@
 				<input type=submit value="Supprimer le tournoi">
 			</form>
 		</td>
+		<?php
 	}
 }
 ?>
