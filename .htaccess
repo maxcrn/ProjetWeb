@@ -14,9 +14,7 @@ RewriteRule ^accueil$   home.php [L]
 
 
 # Page de tournoi :
-RewriteRule ^tournoi-([0-9]+)$   home.php?action=gererTournoi&tournoi=$1 [L]
 RewriteRule ^ajoutTournoi$  home.php?action=ajoutTournoi [L]
-RewriteRule ^rechercheTournoi/([0-9]+)/([a-z]+)$  home.php?action=rechercheEquipeTournoi&nomRechercheEquipeTournoi=$2&idTournoi=$1 [L]
 RewriteRule ^modifEquipeTournoi$  home.php?action=modifEquipeTournoi [L]
 RewriteRule ^suppEquipeTournoi$  home.php?action=suppEquipeTournoi [L]
 RewriteRule ^ajoutEquipeTournoi$  home.php?action=ajoutEquipeTournoi [L]
