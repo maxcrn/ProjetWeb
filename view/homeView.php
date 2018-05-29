@@ -36,7 +36,7 @@
 			<form method="get" action="accueil">
 				<input type=hidden value=creerMatchTournoi name=action>
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<input class="btn btn-primary" type=submit value="Voir les matchs">
+				<input class="btn btn-primary" type=submit value="Matchs">
 			</form>
 		</td>
 		<td>
@@ -48,7 +48,7 @@
 			<form method="post" action="suppTournoi">
 				<input type="hidden" name='_METHOD' value="DELETE">
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<button class="btn btn-danger" type=submit value="Supprimer le tournoi">
+				<button class="btn btn-danger" type=submit value="Supprimer">
 			</form>
 		</td>
 	<?php
