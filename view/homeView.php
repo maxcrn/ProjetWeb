@@ -47,7 +47,7 @@
 			</a>
 		</td>
 		<td>
-			<form method="post" action="Projet/suppTournoi">
+			<form method="post" action="suppTournoi">
 				<input type="hidden" name='_METHOD' value="DELETE">
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
 				<input type=submit value="Supprimer le tournoi">
