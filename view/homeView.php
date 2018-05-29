@@ -48,7 +48,7 @@
 			<form method="post" action="suppTournoi">
 				<input type="hidden" name='_METHOD' value="DELETE">
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<button class="btn btn-danger" type=submit value="Supprimer">
+				<input class="btn btn-danger" type=submit value="Supprimer">
 			</form>
 		</td>
 	<?php
@@ -59,9 +59,7 @@
 	</table>
 </div>
 	<a href="creerTournoi">
-		<button type="button" class="btn btn-default" aria-label="Ajouter un tournoi">
-			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-		</button>
+		<button type="button" class="btn btn-success" aria-label="Ajouter un tournoi">Créer un tournoi</button>
 	</a>
 </body>
 </html>
