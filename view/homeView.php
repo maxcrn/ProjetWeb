@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h3>Liste des tournois</h3>
-	<form method="get" action = "home.php">
+	<form method="get" action = "/">
 		<input type=hidden value=rechercheTournoi name=action>
 		<input type=text name=nomRechercheTournoi placeholder="Nom du tournoi ?">
 		<input type=submit value = "Rechercher">
