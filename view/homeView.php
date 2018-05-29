@@ -30,27 +30,25 @@
 	    echo '<th scope="row">' . $tournoi['nomTournoi'] .'</th> <td>'. $tournoi['lieuTournoi'] . '</td>';
 		?>
 		<td>
-			<a href="listeEquipes/<?php echo $tournoi['idTournoi']; ?>">Voir la liste</a>
+			<a href="listeEquipes/<?php echo $tournoi['idTournoi']; ?>"><button type="button" class="btn btn-primary" aria-label="Equipes">Equipes</button></a>
 		</td>
 		<td>
 			<form method="get" action="accueil">
 				<input type=hidden value=creerMatchTournoi name=action>
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<input type=submit value="Voir les matchs">
+				<input class="btn btn-primary" type=submit value="Voir les matchs">
 			</form>
 		</td>
 		<td>
 			<a href="pageModifTournoi/<?php echo $tournoi['idTournoi']; ?>">
-				<button type="button" class="btn btn-default" aria-label="Modifier le tournoi">
-					<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-				</button>
+				<button type="button" class="btn btn-secondary" aria-label="Modifier le tournoi">Modifier</button>
 			</a>
 		</td>
 		<td>
 			<form method="post" action="suppTournoi">
 				<input type="hidden" name='_METHOD' value="DELETE">
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<input type=submit value="Supprimer le tournoi">
+				<button class="btn btn-danger" type=submit value="Supprimer le tournoi">
 			</form>
 		</td>
 	<?php
