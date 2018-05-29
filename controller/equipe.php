@@ -45,6 +45,7 @@ function supprimerEquipeTournoi(){
 }
 
 function rechercheEquipeTournoi(){
+	echo 'coucou Contro ';
 	$nomEquipe = $_GET['nomRechercheEquipeTournoi'];
 	$idTournoi = $_GET['idTournoi'];
 	$equipes = rechercheEquipeTournoiM($nomEquipe, $idTournoi);
