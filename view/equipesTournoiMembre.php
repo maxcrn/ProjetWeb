@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h3>Liste des équipes</h3>
-	<form method="get" action = "../accueil">
+	<form method="get" action = "/">
 		<input type=hidden value=rechercheEquipeTournoi name=action>
 		<input type=text name=nomRechercheEquipeTournoi placeholder="Nom de l'équipe ?">
 		<input type=hidden name=idTournoi value = "<?php echo $idTournoi; ?>">

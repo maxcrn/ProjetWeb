@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div class="table-responsive">
-	<a href = "home.php?action=gererTournoi&tournoi=<?php echo $idTournoi; ?>">Retourner au tournoi</a>
+	<a href = "listeEquipes/<?php echo $idTournoi; ?>">Retourner à la liste des équipes</a>
 	<h3>Résultat(s) de la recherche</h3>
 	<table class="table">
 		<thead>
@@ -23,7 +23,7 @@
 	    echo '<th scope="row">' . $equipe['nomEquipe'] .'</th>';
 		?>
 		<td>
-			<form method=post action="home.php?action=modifEquipe">
+			<form method=post action="modifEquipeTournoi">
 				<input type="hidden" name='_METHOD' value="PUT">
 				<input type=hidden value = "<?php echo $idTournoi; ?>" name = tournoi>
 				<input type=hidden value = "<?php echo $equipe['idEquipe']; ?>" name=equipe>
@@ -32,7 +32,7 @@
 			</form>
 		</td>
 		<td>
-			<form method=post action="home.php?action=suppEquipeTournoi">
+			<form method=post action="/suppEquipeTournoi">
 				<input type="hidden" name='_METHOD' value="DELETE">
 				<input type=hidden value = "<?php echo $idTournoi; ?>" name = tournoi>
 				<input type=hidden value = "<?php echo $equipe['idEquipe']; ?>" name=equipe>

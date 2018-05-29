@@ -4,7 +4,7 @@
 	<?php require("view/header.html"); ?>
 </head>
 <body>
-	<a href = "home.php?action=listeEquipesTournoi&tournoi=<?php echo $idTournoi; ?>">Retourner à la liste des équipes</a>
+	<a href = "listeEquipes/<?php echo $idTournoi; ?>">Retourner à la liste des équipes</a>
 	<h3>Résultat(s) de la recherche</h3>
 	<div class="table-responsive">
 	<table class="table">
