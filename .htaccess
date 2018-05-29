@@ -9,7 +9,7 @@ RewriteEngine on
 #--------------------------------------------------
 
 # Page d'accueil :
-RewriteRule $  home.php [L]
+RewriteRule ^$  home.php [L]
 RewriteRule ^accueil$   home.php [L]
 
 
@@ -25,4 +25,4 @@ RewriteRule ^deconnexion$  home.php?action=deconnexion [L]
 RewriteRule ^listeEquipes/([0-9]+)$  home.php?action=gererTournoi&tournoi=$1 [L]
 RewriteRule ^pageModifTournoi/([0-9]+)$  home.php?action=pageModifTournoi&tournoi=$1 [L]
 RewriteRule ^suppTournoi$  home.php?action=suppTournoi [L]
-RewriteRule ^creerTournoi$  accueil?action=creerTournoi [L]
+RewriteRule ^creerTournoi$  home.php?action=creerTournoi [L]
