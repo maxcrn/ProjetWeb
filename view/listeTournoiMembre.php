@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h3>Liste des tournois</h3>
-	<form method="get" action = "home.php">
+	<form method="get" action = "/">
 		<input type=hidden value=rechercheTournoi name=action>
 		<input type=text name=nomRechercheTournoi placeholder="Nom du tournoi ?">
 		<input type=submit value = "Rechercher">
@@ -28,14 +28,14 @@
 	    echo '<th scope="row">' . $tournoi['nomTournoi'] .'</th> <td>'. $tournoi['lieuTournoi'] . '</td>';
 		?>
 		<td>
-			<form method="get" action="accueil">
+			<form method="get" action="/">
 				<input type=hidden value = listeEquipesTournoi name=action>
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
 				<input type=submit value="Voir équipes">
 			</form>
 		</td>
 		<td>
-			<form method="get" action="accueil">
+			<form method="get" action="/">
 				<input type=hidden value=listeMatchTournoi name=action>
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
 				<input type=submit value="Liste des matchs">
