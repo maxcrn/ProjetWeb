@@ -28,7 +28,7 @@
 	    echo '<th scope="row">' . $equipeTournoi['nomEquipe'] .'</th>';
 		?>
 		<td>
-			<form method=post action="/Projet/modifEquipeTournoi">
+			<form method=post action="/modifEquipeTournoi">
 				<input type="hidden" name='_METHOD' value="PUT">
 				<input type=hidden value = "<?php echo $idTournoi; ?>" name = tournoi>
 				<input type=hidden value = "<?php echo $equipeTournoi['idEquipe']; ?>" name=equipe>
@@ -37,7 +37,7 @@
 			</form>
 		</td>
 		<td>
-			<form method=post action="/Projet/suppEquipeTournoi">
+			<form method=post action="/suppEquipeTournoi">
 				<input type="hidden" name='_METHOD' value="DELETE">
 				<input type=hidden value = "<?php echo $idTournoi; ?>" name = tournoi>
 				<input type=hidden value = "<?php echo $equipeTournoi['idEquipe']; ?>" name=equipe>
@@ -51,7 +51,7 @@
 		</tbody>
 	</table>
 </div>
-	<form method = "POST" action = "../ajoutEquipeTournoi">
+	<form method = "POST" action = "/ajoutEquipeTournoi">
 		<input type=hidden value="<?php echo $idTournoi; ?>" name="tournoi">
 		<input type=text name="nomEquipeAjout">
 		<input type=submit value="Ajouter une équipe">
