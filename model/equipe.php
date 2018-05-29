@@ -25,7 +25,6 @@ function supprimerEquipeTournoiM($idTournoi, $idEquipe){
 
 function rechercheEquipeTournoiM($nomEquipe, $idTournoi){
 	$db = dbConnect();
-	echo 'coucou Model ';
 	$equipes = $db->prepare("SELECT * FROM Equipe WHERE nomEquipe LIKE ? AND idTournoi = ?");
 	$equipes->execute(array('%' . $nomEquipe . '%', $idTournoi));
 	return $equipes;

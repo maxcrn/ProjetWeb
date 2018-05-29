@@ -39,6 +39,7 @@ function ajoutTournoiM($nbEquipes, $nom, $pays){
 
 function rechercheTournoiM($nomTournoi){
 	$db = dbConnect();
+	echo 'coucou Model ';
 	$tournois = $db->prepare("SELECT * FROM Tournoi WHERE nomTournoi LIKE ?");
 	$tournois->execute(array('%' . $nomTournoi . '%'));
 	return $tournois;

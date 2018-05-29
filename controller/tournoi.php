@@ -104,6 +104,7 @@ function modifTournoi(){
 }
 
 function rechercheTournoi(){
+	echo 'coucou Contro ';
 	$nomTournoi = $_GET['nomRechercheTournoi'];
 	$tournois = rechercheTournoiM($nomTournoi);
 	if($tournois->rowCount()==0){
