@@ -7,4 +7,4 @@
 
 <h3 style="color:red">Impossible de supprimer une équipe ayant déjà participé à un match</h3>
 
-<a href="/">Retourner à l'accueil</a>
+<a href="/listeEquipes/<?php echo $idTournoi; ?>">Retourner à la liste des équipes</a>
