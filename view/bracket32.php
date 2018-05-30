@@ -1,6 +1,6 @@
 <html>
 <head> 
-    <link rel="stylesheet" type="text/css" href="view/bracket.css">
+    <link rel="stylesheet" type="text/css" href="/view/bracket32.css">
 </head>
 <body>
 
