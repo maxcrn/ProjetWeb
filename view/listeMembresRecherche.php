@@ -38,14 +38,14 @@
 			<td>
 				<form method=post action="/setAdmin">
 					<input type=hidden value="<?php echo $membre['idMembre']; ?>" name = idMembre>
-					<input type=submit value ="Rendre admin">
+					<input class="btn btn-warning" type=submit value ="Rendre admin">
 				</form>
 			</td>
 			<td>
 				<form method=post action="/deleteMembre">
 					<input type="hidden" name='_METHOD' value="DELETE">
 					<input type=hidden value = "<?php echo $membre['idMembre']; ?>" name = idMembre>
-					<input type=submit value ="Supprimer ce membre">
+					<input class="btn btn-danger" type=submit value ="Supprimer ce membre">
 				</form>
 			</td>
 		<?php } ?>

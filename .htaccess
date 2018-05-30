@@ -36,6 +36,10 @@ RewriteRule ^listeMatchTournoi/([0-9]+)$  home.php?action=listeMatchTournoi&tour
 
 #Pages globales :
 RewriteRule ^listeMembres$  home.php?action=listeMembres [L]
+
 RewriteRule ^deconnexion$  home.php?action=deconnexion [L]
 
 RewriteRule ^listeEquipes/([0-9]+)$  home.php?action=gererTournoi&tournoi=$1 [L]
+
+RewriteRule ^login$  home.php?action=login [L]
+RewriteRule ^signin$  home.php?action=signin [L]

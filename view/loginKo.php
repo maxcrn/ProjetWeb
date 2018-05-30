@@ -7,7 +7,7 @@
 
 <div class = "container">
 	<div class="wrapper">
-		<form action="home.php?action=login" method="post" name="Login_Form" class="form-signin">       
+		<form action="/login" method="post" name="Login_Form" class="form-signin">       
 		    <h3 class="form-signin-heading" style="text-align:center">Bienvenue sur le site de gestion de tournoi ! Merci de vous connecter !</h3>
 			  <hr class="colorgraph"><br>
 			  
@@ -16,7 +16,7 @@
 			 
 			  <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit">Connexion</button>
 			  <p style="color:red">Connexion échouée, pseudo ou mot de passe invalide</p>
-			  Vous n'avez pas de compte ? <a href="home.php?action=signin">Cliquez ici !</a>
+			  Vous n'avez pas de compte ? <a href="/signin">Cliquez ici !</a>
 		</form>			
 	</div>
 </div>

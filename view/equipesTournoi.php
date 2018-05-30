@@ -33,7 +33,7 @@
 				<input type=hidden value = "<?php echo $idTournoi; ?>" name = tournoi>
 				<input type=hidden value = "<?php echo $equipeTournoi['idEquipe']; ?>" name=equipe>
 				<input type = text name = nomEquipe>
-				<input type=submit value ="Modifier">
+				<input class="btn btn-warning" type=submit value ="Modifier">
 			</form>
 		</td>
 		<td>
@@ -41,7 +41,7 @@
 				<input type="hidden" name='_METHOD' value="DELETE">
 				<input type=hidden value = "<?php echo $idTournoi; ?>" name = tournoi>
 				<input type=hidden value = "<?php echo $equipeTournoi['idEquipe']; ?>" name=equipe>
-				<input type=submit value ="Supprimer cette équipe">
+				<input class="btn btn-danger" type=submit value ="Supprimer cette équipe">
 			</form>
 		</td>
 	<?php
