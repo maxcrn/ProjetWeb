@@ -113,7 +113,7 @@ function setAdmin(){
 }
 
 function deleteMembre(){
-	parse_str(file_get_contents('php://input'), $_DELETE);
+	parse_str(file_get_contents('php://input'), $_PUT);
 
 	$idMembre = $_PUT['idMembre'];
 	$affectedLines = deleteMembreM($idMembre);
