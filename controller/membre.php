@@ -113,9 +113,9 @@ function setAdmin(){
 }
 
 function deleteMembre(){
-	parse_str(file_get_contents('php://input'), $_PUT);
+	parse_str(file_get_contents('php://input'), $_DELETE);
 
-	$idMembre = $_PUT['idMembre'];
+	$idMembre = $_DELETE['idMembre'];
 	$affectedLines = deleteMembreM($idMembre);
 	if ($affectedLines === false) {
         http_response_code(404); // 404 car ressource non trouvée
