@@ -25,6 +25,9 @@ RewriteRule ^suppTournoi$  home.php?action=suppTournoi [L]
 RewriteRule ^creerTournoi$  home.php?action=creerTournoi [L]
 RewriteRule ^creerMatchTournoi/([0-9]+)$  home.php?action=creerMatchTournoi&tournoi=$1 [L]
 
+#Pages membres
+RewriteRule ^listeMatchTournoi/([0-9]+)$  home.php?action=listeMatchTournoi&tournoi=$1 [L]
+
 #Pages globales :
 RewriteRule ^listeMembres$  home.php?action=listeMembres [L]
 RewriteRule ^deconnexion$  home.php?action=deconnexion [L]
