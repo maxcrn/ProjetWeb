@@ -67,9 +67,10 @@
 		
 	}
 	?> <br \>
+
+		</tbody>
+	</table>
 	<?php
 include('view/bracket32.php');
 	?>
-		</tbody>
-	</table>
 </div>
