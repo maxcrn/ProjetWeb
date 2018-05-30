@@ -65,7 +65,7 @@
 				<?php echo $nomEquipe2; ?>
 			</td>
 			<td>
-				<a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> Modifier </a>
+				<a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> <button type="button" class="btn btn-warning">Modifier</button></a>
 			</td>
 			<td>
 				<form method=post action="/suppMatchTournoi">
@@ -73,7 +73,7 @@
 					<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
 					<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
 					<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
-					<input type=submit value ="Supprimer ce match">
+					<input class="btn btn-danger" type=submit value ="Supprimer ce match">
 				</form>
 			</td>
 	<?php 
