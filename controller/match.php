@@ -63,10 +63,10 @@ function ajoutMatchTournoi(){
     	if($scoreEquipe1 == $scoreEquipe2){
     		require("view/matchTournoiEgalite.php");
     	}
-		if($idEquipe1 == $idEquipe2){
+		else if($idEquipe1 == $idEquipe2){
 			require("view/matchTournoiMemeEquipe.php");
 		}
-		if($nbMatchJoue1 != $nbMatchJoue2){
+		else if($nbMatchJoue1 != $nbMatchJoue2){
 			require("view/matchTournoiMauvaisTour.php");
 		}
 		exit;
@@ -190,10 +190,10 @@ function modifMatchTournoi(){
     	if($scoreEquipe1 == $scoreEquipe2){
     		require("view/modifMatchTournoiEgalite.php");
     	}
-		if($idEquipe1 == $idEquipe2){
+		else if($idEquipe1 == $idEquipe2){
 			require("view/modifMatchTournoiMemeEquipe.php");
 		}
-		if($nbMatchJoue1 != $nbMatchJoue2){
+		else if($nbMatchJoue1 != $nbMatchJoue2){
 			require("view/modifMatchTournoiMauvaisTour.php");
 		}
 		exit;
