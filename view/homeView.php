@@ -30,15 +30,15 @@
 	    echo '<th scope="row">' . $tournoi['nomTournoi'] .'</th> <td>'. $tournoi['lieuTournoi'] . '</td>';
 		?>
 		<td>
-			<a href="listeEquipes/<?php echo $tournoi['idTournoi']; ?>"><button type="button" class="btn btn-primary" aria-label="Equipes">Equipes</button></a>
+			<a href="/listeEquipes/<?php echo $tournoi['idTournoi']; ?>"><button type="button" class="btn btn-primary" aria-label="Equipes">Equipes</button></a>
 		</td>
 		<td>
-			<a href="creerMatchTournoi/<?php echo $tournoi['idTournoi']; ?>">
+			<a href="/creerMatchTournoi/<?php echo $tournoi['idTournoi']; ?>">
 				<button type=button class="btn btn-primary" aria-label="Matchs"> Matchs </button>
 			</form>
 		</td>
 		<td>
-			<a href="pageModifTournoi/<?php echo $tournoi['idTournoi']; ?>">
+			<a href="/pageModifTournoi/<?php echo $tournoi['idTournoi']; ?>">
 				<button type="button" class="btn btn-secondary" aria-label="Modifier le tournoi">Modifier</button>
 			</a>
 		</td>
@@ -56,7 +56,7 @@
 		</tbody>
 	</table>
 </div>
-	<a href="creerTournoi">
+	<a href="/creerTournoi">
 		<button type="button" class="btn btn-success" aria-label="Ajouter un tournoi">Créer un tournoi</button>
 	</a>
 </body>
