@@ -3,8 +3,8 @@
 	<?php require("view/headerMembres.html"); ?>
 </head>
 <h3>Résultat de la recherche</h3>
-<a href=home.php?action=listeMembres>Retour à la liste des membres</a>
-<form method="get" action = "home.php">
+<a href=/listeMembres>Retour à la liste des membres</a>
+<form method="get" action = "/">
 	<input type=hidden value=rechercheMembre name=action>
 	<input type=text name=nomRechercheMembre placeholder="Pseudo du membre ?">
 	<input type=submit value = "Rechercher">

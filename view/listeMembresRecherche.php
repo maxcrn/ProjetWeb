@@ -3,8 +3,8 @@
 	<?php require("view/headerMembres.html"); ?>
 </head>
 <h3>Résultat de la recherche</h3>
-<a href=home.php?action=listeMembres>Retour à la liste des membres</a>
-<form method="get" action = "home.php">
+<a href=/listeMembres>Retour à la liste des membres</a>
+<form method="get" action = "/">
 	<input type=hidden value=rechercheMembre name=action>
 	<input type=text name=nomRechercheMembre placeholder="Pseudo du membre ?">
 	<input type=submit value = "Rechercher">
@@ -36,13 +36,13 @@
         if($roleMembre!='Admin'){
         ?>
 			<td>
-				<form method=post action="home.php?action=setAdmin">
+				<form method=post action="/setAdmin">
 					<input type=hidden value="<?php echo $membre['idMembre']; ?>" name = idMembre>
 					<input type=submit value ="Rendre admin">
 				</form>
 			</td>
 			<td>
-				<form method=post action="home.php?action=deleteMembre">
+				<form method=post action="/deleteMembre">
 					<input type="hidden" name='_METHOD' value="DELETE">
 					<input type=hidden value = "<?php echo $membre['idMembre']; ?>" name = idMembre>
 					<input type=submit value ="Supprimer ce membre">
