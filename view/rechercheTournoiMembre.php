@@ -32,11 +32,7 @@
 			<a href="/listeEquipes/<?php echo $tournoi['idTournoi']; ?>"><button type="button" class="btn btn-primary" aria-label="Equipes">Equipes</button></a>
 		</td>
 		<td>
-			<form method="get" action="/">
-				<input type=hidden value=listeMatchTournoi name=action>
-				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<input class="btn btn-primary" type=submit value="Matchs">
-			</form>
+			<a href="/listeMatchTournoi/<?php echo $tournoi['idTournoi']; ?>"><button type="button" class="btn btn-primary" aria-label="Matchs">Matchs</button></a>
 		</td>
 	<?php
 	}
