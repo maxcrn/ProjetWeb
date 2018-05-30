@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form method=post action=home.php?action=modifMatchTournoi style="display:inline">
+	<form method=post action="/modifMatchTournoi" style="display:inline">
 		<input type="hidden" name='_METHOD' value="PUT"> <!-- Methode PUT car modif de données -->
 		<input type="hidden" name="idPartie" value="<?php echo $idPartie; ?>">
 		<input type="hidden" name="perdantAncien" value = "<?php echo $perdantAncien; ?>">
@@ -68,5 +68,5 @@
 					}
 				} ?>
 			</select>
-			<br \><input type=submit value = "Modifier le match">
+			<br \><input class="btn btn-warning" type=submit value = "Modifier le match">
 		</form>
