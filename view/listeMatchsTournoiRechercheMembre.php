@@ -3,7 +3,7 @@
 	<?php require("view/header.html"); ?>
 </head>
 <a href = "home.php?action=listeMatchTournoi&tournoi=<?php echo $idTournoi; ?>">Retourner à la liste des matchs</a>
-<h3>Liste des matchs</h3>
+<h3>Résultat de la recherche</h3>
 	<form method="get" action = "home.php">
 		<input type=hidden value=rechercheMatchTournoi name=action>
 		<input type=text name=nomRechercheEquipeMatchTournoi placeholder="Nom de l'équipe ?">

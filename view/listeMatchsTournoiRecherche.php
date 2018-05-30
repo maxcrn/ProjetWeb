@@ -2,8 +2,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<?php require("view/header.html"); ?>
 </head>
-<h3>Liste des matchs</h3>
-	<form method="get" action = "home.php">
+<a href = "/listeMatchTournoi/<?php echo $idTournoi; ?>">Retourner à la liste des matchs</a>
+<h3>Résultat de la recherche</h3>
+	<form method="get" action = "/">
 		<input type=hidden value=rechercheMatchTournoi name=action>
 		<input type=text name=nomRechercheEquipeMatchTournoi placeholder="Nom de l'équipe ?">
 		<input type=hidden name=idTournoi value = "<?php echo $idTournoi; ?>">
@@ -64,18 +65,10 @@
 				<?php echo $nomEquipe2; ?>
 			</td>
 			<td>
-				<form method=get action="home.php">
-					<input type=hidden name=action value=viewModifMatchTournoi>
-					<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idMatch>
-					<input type=hidden value="<?php echo $idTournoi; ?>" name = tournoi>
-					<!-- On passe les idEquipes pour pouvoir diminuer le nb de matchs joués et requalifier les équipes -->
-					<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
-					<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
-					<input type=submit value ="Modifier">
-				</form>
+				<a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> Modifier </a>
 			</td>
 			<td>
-				<form method=post action="home.php?action=suppMatchTournoi">
+				<form method=post action="/suppMatchTournoi">
 					<input type="hidden" name='_METHOD' value="DELETE">
 					<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
 					<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
