@@ -63,6 +63,7 @@
 				<?php echo $nomEquipe2; ?>
 			</td>
 			<td>
+				<a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> Modifier </a>
 				<form method=get action="home.php">
 					<input type=hidden name=action value=viewModifMatchTournoi>
 					<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idMatch>
