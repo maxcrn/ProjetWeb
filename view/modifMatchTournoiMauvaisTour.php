@@ -64,14 +64,15 @@
 					}
 				} ?>
 			</select>
-			<br \><input class="btn btn-warning" type=submit value = "Ajouter le match">
+			<br \><input class="btn btn-success" type=submit value = "Ajouter le match">
 		</form>
 		
 	<br \> <br \> <br \>
 	<p style=color:red> La modification n'a pas eu lieu car ces équipes ne sont pas au même tour dans le tournoi ! </p>
 	<br \>
 	
-	<?php include('view/listeMatchsTournoi.php'); ?>
+	<?php include('view/listeMatchsTournoi.php'); 
+	include('view/bracket32.php'); ?>
 </body>
 </html>
 

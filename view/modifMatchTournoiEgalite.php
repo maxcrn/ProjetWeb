@@ -1,6 +1,5 @@
 <html>
 <head>
-	<link rel="stylesheet1" type="text/css" href="bracket.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<?php require("view/header.html"); ?>
@@ -64,7 +63,7 @@
 					}
 				} ?>
 			</select>
-			<br \><input class="btn btn-warning" type=submit value = "Ajouter le match">
+			<br \><input class="btn btn-success" type=submit value = "Ajouter le match">
 		</form>
 		
 	<br \> <br \> <br \>
@@ -72,7 +71,8 @@
 	<br \>
 
 	
-	<?php include('view/listeMatchsTournoi.php'); ?>
+	<?php include('view/listeMatchsTournoi.php'); 
+	include('view/bracket32.php'); ?>
 </body>
 </html>
 
