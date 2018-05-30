@@ -7,7 +7,7 @@
 
 <div class = "container">
 	<div class="wrapper">
-		<form action="home.php?action=signin" method="post" name="Login_Form" class="form-signin">       
+		<form action="/signin" method="post" name="Login_Form" class="form-signin">       
 		    <h3 class="form-signin-heading" style="text-align:center">Inscription</h3>
 			  <hr class="colorgraph"><br>
 			  

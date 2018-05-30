@@ -5,4 +5,6 @@
 	<?php require("view/header.html"); ?>
 </head>
 
-<h2 style="color:red">Impossible de supprimer une équipe ayant déjà participé à un match</h2>
+<h3 style="color:red">Impossible de supprimer une équipe ayant déjà participé à un match</h3>
+
+<a href="/">Retourner à l'accueil</a>
