@@ -5,7 +5,7 @@
 	<h3> Modification d'un tournoi </h3>
 </head>
 <body>
-	<form method=post action="home.php?action=modifTournoi">
+	<form method=post action="/modifTournoi">
 		<p style=color:red>Le nombre d'équipes doit être supérieur au nombre d'équipes déjà créées.</p>
 		Nombre d'équipes : 
 		<input type="hidden" name='_METHOD' value="PUT">

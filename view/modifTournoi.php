@@ -5,7 +5,7 @@
 	<h3> Modification d'un tournoi </h3>
 </head>
 <body>
-	<form method=post action="home.php?action=modifTournoi">
+	<form method=post action="/modifTournoi">
 		Nombre d'équipes : 
 		<input type="hidden" name='_METHOD' value="PUT">
 		<input type="hidden" name='idTournoi' value = "<?php echo $_GET['tournoi']; ?>">
