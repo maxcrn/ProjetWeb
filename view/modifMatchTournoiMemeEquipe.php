@@ -71,8 +71,12 @@
 	<p style=color:red> La modification n'a pas eu lieu car vous avez sélectionné 2 fois la même équipe ! </p>
 	<br \>
 	
-	<?php include('view/listeMatchsTournoi.php'); 
-	include('view/bracket32.php'); ?>
+	<?php include('view/listeMatchsTournoi.php'); ?>
+	<div class="table-responsive">
+		<?php
+	include('view/bracket32.php');
+	?>
+</div>
 </body>
 </html>
 

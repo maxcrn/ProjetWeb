@@ -71,8 +71,11 @@
 	<p style=color:red> La modification n'a pas eu lieu car ces équipes ne sont pas au même tour dans le tournoi ! </p>
 	<br \>
 	
-	<?php include('view/listeMatchsTournoi.php'); 
-	include('view/bracket32.php'); ?>
-</body>
+	<?php include('view/listeMatchsTournoi.php'); ?>
+	<div class="table-responsive">
+		<?php
+	include('view/bracket32.php');
+	?>
+</div>
 </html>
 

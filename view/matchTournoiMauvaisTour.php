@@ -70,8 +70,12 @@
 		
 	<br \> <br \> <br \>
 	
-	<?php include('view/listeMatchsTournoi.php'); 
-	include('view/bracket32.php'); ?>
+	<?php include('view/listeMatchsTournoi.php'); ?>
+	<div class="table-responsive">
+		<?php
+	include('view/bracket32.php');
+	?>
+</div>
 </body>
 </html>
 

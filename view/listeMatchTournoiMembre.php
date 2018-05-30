@@ -70,6 +70,8 @@
 
 		</tbody>
 	</table>
+	</div>
+	<div class="table-responsive">
 	<?php
 include('view/bracket32.php');
 	?>
