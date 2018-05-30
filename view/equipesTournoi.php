@@ -54,7 +54,7 @@
 	<form method = "POST" action = "/ajoutEquipeTournoi">
 		<input type=hidden value="<?php echo $idTournoi; ?>" name="tournoi">
 		<input type=text name="nomEquipeAjout">
-		<input type=submit value="Ajouter une équipe">
+		<input class="btn btn-success" type=submit value="Ajouter une équipe">
 	</form>
 </body>
 </html>

@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form method=post action=home.php?action=ajoutMatchTournoi style="display:inline">
+	<form method=post action="/ajoutMatchTournoi" style="display:inline">
 		<?php 
 		if($nbEquipes == 32 and $nbMatch16 < 16){
 			echo '<h3>Créer un match</h3>';
@@ -65,7 +65,7 @@
 				} ?>
 			</select>
 			<p style=color:red> Vous avez sélectionné 2 fois la même équipe ! </p>
-			<br \><input type=submit value = "Ajouter le match">
+			<br \><input class="btn btn-success" type=submit value = "Ajouter le match">
 		</form>
 		
 	<br \> <br \> <br \>

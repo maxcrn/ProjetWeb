@@ -27,9 +27,12 @@ RewriteRule ^creerMatchTournoi/([0-9]+)$  home.php?action=creerMatchTournoi&tour
 
 RewriteRule ^viewModifMatchTournoi/([0-9]+)/([0-9]+):([0-9]+)VS([0-9]+)$  home.php?action=viewModifMatchTournoi&idMatch=$2&tournoi=$1&idEquipe1=$3&idEquipe2=$4 [L]
 RewriteRule ^suppMatchTournoi$  home.php?action=suppMatchTournoi [L]
+RewriteRule ^ajoutMatchTournoi$  home.php?action=ajoutMatchTournoi [L]
 
 RewriteRule ^setAdmin$  home.php?action=setAdmin [L]
 RewriteRule ^deleteMembre$  home.php?action=deleteMembre [L]
+
+
 
 #Pages membres
 RewriteRule ^listeMatchTournoi/([0-9]+)$  home.php?action=listeMatchTournoi&tournoi=$1 [L]
