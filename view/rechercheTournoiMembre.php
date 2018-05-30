@@ -29,17 +29,13 @@
 	    echo '<th scope="row">' . $tournoi['nomTournoi'] .'</th> <td>'. $tournoi['lieuTournoi'] . '</td>';
 		?>
 		<td>
-			<form method="get" action="home.php">
-				<input type=hidden value = listeEquipesTournoi name=action>
-				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<input type=submit value="Voir équipes">
-			</form>
+			<a href="listeEquipes/<?php echo $tournoi['idTournoi']; ?>"><button type="button" class="btn btn-primary" aria-label="Equipes">Equipes</button></a>
 		</td>
 		<td>
-			<form method="get" action="home.php">
+			<form method="get" action="/">
 				<input type=hidden value=listeMatchTournoi name=action>
 				<input type=hidden value="<?php echo $tournoi['idTournoi']; ?>" name=tournoi>
-				<input type=submit value="Voir la liste des matchs">
+				<input class="btn btn-primary" type=submit value="Matchs">
 			</form>
 		</td>
 	<?php
