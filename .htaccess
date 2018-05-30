@@ -15,10 +15,11 @@ RewriteRule ^accueil$   home.php [L]
 
 # Pages admin:
 RewriteRule ^ajoutTournoi$  home.php?action=ajoutTournoi [L]
+RewriteRule ^modifTournoi$  home.php?action=modifTournoi [L]
+
 RewriteRule ^modifEquipeTournoi$  home.php?action=modifEquipeTournoi [L]
 RewriteRule ^suppEquipeTournoi$  home.php?action=suppEquipeTournoi [L]
 RewriteRule ^ajoutEquipeTournoi$  home.php?action=ajoutEquipeTournoi [L]
-
 
 RewriteRule ^pageModifTournoi/([0-9]+)$  home.php?action=pageModifTournoi&tournoi=$1 [L]
 RewriteRule ^suppTournoi$  home.php?action=suppTournoi [L]
@@ -34,9 +35,9 @@ RewriteRule ^setAdmin$  home.php?action=setAdmin [L]
 RewriteRule ^deleteMembre$  home.php?action=deleteMembre [L]
 
 
-
 #Pages membres
 RewriteRule ^listeMatchTournoi/([0-9]+)$  home.php?action=listeMatchTournoi&tournoi=$1 [L]
+
 
 #Pages globales :
 RewriteRule ^listeMembres$  home.php?action=listeMembres [L]

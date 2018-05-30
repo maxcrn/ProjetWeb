@@ -15,8 +15,8 @@
 		<input type = radio name = nbEquipesTournoi value = 16> 16 
 		<input type = radio name = nbEquipesTournoi value = 32> 32 <br \>
 		Nom du tournoi : <input type = text name = nomTournoi> <br \>
-		Pays du tournoi : <input type = text name = paysTournoi> <br \>
-		<input type=submit value = "Modifier le tournoi">
+		Lieu du tournoi : <input type = text name = paysTournoi> <br \>
+		<input class="btn btn-warning" type=submit value = "Modifier le tournoi">
 	</form>
 </body>
 </html>
