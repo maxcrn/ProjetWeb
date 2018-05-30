@@ -77,6 +77,7 @@
 	<br \> <br \> <br \>
 	
 	<?php include('view/listeMatchsTournoi.php');  
+	include('view/bracket32.php')
 	?>
 
 </body>
