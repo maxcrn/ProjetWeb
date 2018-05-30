@@ -3,7 +3,7 @@
 	<?php require("view/header.html"); ?>
 </head>
 <h3>Liste des matchs</h3>
-	<form method="get" action = "home.php">
+	<form method="get" action = "/">
 		<input type=hidden value=rechercheMatchTournoi name=action>
 		<input type=text name=nomRechercheEquipeMatchTournoi placeholder="Nom de l'équipe ?">
 		<input type=hidden name=idTournoi value = "<?php echo $idTournoi; ?>">

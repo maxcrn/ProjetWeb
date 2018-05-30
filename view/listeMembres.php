@@ -4,7 +4,7 @@
 </head>
 <h3>Liste des membres</h3>
 
-<form method="get" action = "home.php">
+<form method="get" action = "/">
 	<input type=hidden value=rechercheMembre name=action>
 	<input type=text name=nomRechercheMembre placeholder="Pseudo du membre ?">
 	<input type=submit value = "Rechercher">
