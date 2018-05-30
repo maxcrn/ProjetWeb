@@ -13,14 +13,20 @@ RewriteRule ^$  home.php [L]
 RewriteRule ^accueil$   home.php [L]
 
 
-# Page de tournoi :
+# Pages admin:
 RewriteRule ^ajoutTournoi$  home.php?action=ajoutTournoi [L]
 RewriteRule ^modifEquipeTournoi$  home.php?action=modifEquipeTournoi [L]
 RewriteRule ^suppEquipeTournoi$  home.php?action=suppEquipeTournoi [L]
 RewriteRule ^ajoutEquipeTournoi$  home.php?action=ajoutEquipeTournoi [L]
-RewriteRule ^listeMembres$  home.php?action=listeMembres [L]
-RewriteRule ^deconnexion$  home.php?action=deconnexion [L]
-RewriteRule ^listeEquipes/([0-9]+)$  home.php?action=gererTournoi&tournoi=$1 [L]
+
+
 RewriteRule ^pageModifTournoi/([0-9]+)$  home.php?action=pageModifTournoi&tournoi=$1 [L]
 RewriteRule ^suppTournoi$  home.php?action=suppTournoi [L]
 RewriteRule ^creerTournoi$  home.php?action=creerTournoi [L]
+RewriteRule ^creerMatchTournoi/([0-9]+)$  home.php?action=creerMatchTournoi&tournoi=$1 [L]
+
+#Pages globales :
+RewriteRule ^listeMembres$  home.php?action=listeMembres [L]
+RewriteRule ^deconnexion$  home.php?action=deconnexion [L]
+
+RewriteRule ^listeEquipes/([0-9]+)$  home.php?action=gererTournoi&tournoi=$1 [L]
