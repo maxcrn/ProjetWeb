@@ -4,7 +4,7 @@
 	<?php require("view/header.html"); ?>
 </head>
 <body>
-<a href = home.php>Retour à la liste des tournois</a>
+<a href = "/">Retour à la liste des tournois</a>
 	<h3>Résultat de la recherche</h3>
 <?php
 	if(!$tournois){

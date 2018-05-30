@@ -89,7 +89,7 @@ if(isset($_COOKIE['pseudo']) AND isset($_COOKIE['pass']) AND isset($_COOKIE['id'
 
 else if(isset($_COOKIE['pseudo']) AND isset($_COOKIE['pass']) AND isset($_COOKIE['id']) AND connecte()) { //Actions d'un membre
 	if(isset($_GET['action'])){
-		if($_GET['action'] == 'listeEquipesTournoi' AND isset($_GET['tournoi'])){
+		if($_GET['action'] == 'gererTournoi' AND isset($_GET['tournoi'])){
 		    listeEquipesTournoiMembre();
 		}
 		else if($_GET['action'] == 'listeMatchTournoi' AND isset($_GET['tournoi'])){
