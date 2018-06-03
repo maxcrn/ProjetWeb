@@ -12,7 +12,7 @@ function signin(){
 	$mail = htmlspecialchars($_POST['mail']);
 	if($pseudoLibre->rowCount()!=0){
 		http_response_code(404); // 404 car ressource non trouvée
-		require('view/signinScreen.php');
+		require('view/signinScreenErreurPseudo.php');
 	}
 	else{
 		$affectedLines = signinMembre($pseudo,$pass,$mail);
