@@ -64,25 +64,25 @@
 			</td>
 			<td>
 				<?php 
-				if(matchTournoi['tourPartie']==16){
+				if($matchTournoi['tourPartie']==16){
 					if(getNbMatch($matchTournoi['idTournoi'], 8) == 0){
 						 ?> <a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> <button type="button" class="btn btn-warning">Modifier</button></a>
 						 <?php
 					}
 				}
-				else if(matchTournoi['tourPartie']==8){
+				else if($matchTournoi['tourPartie']==8){
 					if(getNbMatch($matchTournoi['idTournoi'], 4) == 0){
 						 ?> <a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> <button type="button" class="btn btn-warning">Modifier</button></a>
 						 <?php
 					}
 				}
-				else if(matchTournoi['tourPartie']==4){
+				else if($matchTournoi['tourPartie']==4){
 					if(getNbMatch($matchTournoi['idTournoi'], 2) == 0){
 						 ?> <a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> <button type="button" class="btn btn-warning">Modifier</button></a>
 						 <?php
 					}
 				}
-				else if(matchTournoi['tourPartie']==2){
+				else if($matchTournoi['tourPartie']==2){
 					if(getNbMatch($matchTournoi['idTournoi'], 1) == 0){
 						 ?> <a href="/viewModifMatchTournoi/<?php echo $idTournoi; ?>/<?php echo $matchTournoi['idPartie']; ?>:<?php echo $matchTournoi['idEquipe1']; ?>VS<?php echo $matchTournoi['idEquipe2']; ?>"> <button type="button" class="btn btn-warning">Modifier</button></a>
 						 <?php
