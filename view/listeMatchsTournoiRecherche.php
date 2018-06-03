@@ -97,6 +97,7 @@
 				?>
 			</td>
 			<td>
+				<?php
 				if($matchTournoi['tourPartie']==16){
 					if(getNbMatch($matchTournoi['idTournoi'], 8) == 0){
 						 ?> <form method=post action="/suppMatchTournoi">
