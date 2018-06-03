@@ -4,7 +4,7 @@ require_once('model/tournoi.php');
 
 function samePseudo($pseudo){
 	$db=dbConnect();
-	$req = $db->prepare('SELECT pseudoMembre FROM Membre WHERE pseudo LIKE ?');
+	$req = $db->prepare('SELECT * FROM Membre WHERE pseudoMembre LIKE ?');
 	$req->execute(array($pseudo));
 	return $req;
 }
