@@ -37,9 +37,9 @@ function login(){
 	$idMembre=$res['idMembre'];
 	$passHash = $res['passMembre'];
 	if($isPasswordCorrect){
-		setcookie('pseudo', $pseudo, time() + 365*24*3600, null, null, true, true);
-		setcookie('id', $idMembre, time() + 365*24*3600, null, null, true, true);
-		setcookie('pass', $passHash, time() + 365*24*3600, null, null, true, true);
+		setcookie('pseudo', $pseudo, time() + 365*24*3600, null, null, false, true);
+		setcookie('id', $idMembre, time() + 365*24*3600, null, null, false, true);
+		setcookie('pass', $passHash, time() + 365*24*3600, null, null, false, true);
 		require('view/loginOk.php');
 	}
 	else{
