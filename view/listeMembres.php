@@ -2,11 +2,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<?php require("view/headerMembres.html"); ?>
 </head>
-<h3>Liste des membres</h3>
+<h3>Liste des utlisateurs</h3>
 
 <form method="get" action = "/">
 	<input type=hidden value=rechercheMembre name=action>
-	<input type=text name=nomRechercheMembre placeholder="Pseudo du membre ?">
+	<input type=text name=nomRechercheMembre placeholder="Pseudo de l'utilisateur ?">
 	<input type=submit value = "Rechercher">
 </form>
 <div class="table-responsive">
