@@ -6,6 +6,9 @@
 </head>
 
 <body>
+	<?php
+	if($nbMatch1 != 1){
+		?>
 	<form method=post action="/ajoutMatchTournoi" style="display:inline">
 		<?php 
 		if($nbEquipes >= 32 and $nbMatch16 < 16){
@@ -45,9 +48,6 @@
 		} 
 			?>
 
-		<?php 
-		if($nbMatch1 != 1){
-			?>
 			<input type=hidden name=idTournoi value="<?php echo $idTournoi; ?>">
 			<select name=idEquipe1 >
 				<?php 
