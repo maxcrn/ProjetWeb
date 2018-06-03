@@ -96,13 +96,65 @@
 				
 			</td>
 			<td>
-				<form method=post action="/suppMatchTournoi">
-					<input type="hidden" name='_METHOD' value="DELETE">
-					<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
-					<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
-					<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
-					<input class="btn btn-danger" type=submit value ="Supprimer ce match">
-				</form>
+				if($matchTournoi['tourPartie']==16){
+					if(getNbMatch($matchTournoi['idTournoi'], 8) == 0){
+						 ?> <form method=post action="/suppMatchTournoi">
+						<input type="hidden" name='_METHOD' value="DELETE">
+						<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
+						<input class="btn btn-danger" type=submit value ="Supprimer ce match">
+					</form>
+						 <?php
+					}
+				}
+				else if($matchTournoi['tourPartie']==8){
+					if(getNbMatch($matchTournoi['idTournoi'], 4) == 0){
+						 ?> <form method=post action="/suppMatchTournoi">
+						<input type="hidden" name='_METHOD' value="DELETE">
+						<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
+						<input class="btn btn-danger" type=submit value ="Supprimer ce match">
+					</form>
+						 <?php
+					}
+				}
+				else if($matchTournoi['tourPartie']==4){
+					if(getNbMatch($matchTournoi['idTournoi'], 2) == 0){
+						 ?> <form method=post action="/suppMatchTournoi">
+						<input type="hidden" name='_METHOD' value="DELETE">
+						<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
+						<input class="btn btn-danger" type=submit value ="Supprimer ce match">
+					</form>
+						 <?php
+					}
+				}
+				else if($matchTournoi['tourPartie']==2){
+					if(getNbMatch($matchTournoi['idTournoi'], 1) == 0){
+						 ?> <form method=post action="/suppMatchTournoi">
+						<input type="hidden" name='_METHOD' value="DELETE">
+						<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
+						<input class="btn btn-danger" type=submit value ="Supprimer ce match">
+					</form>
+						 <?php
+					}
+				}
+				else{
+					 ?> <form method=post action="/suppMatchTournoi">
+						<input type="hidden" name='_METHOD' value="DELETE">
+						<input type=hidden value = "<?php echo $matchTournoi['idPartie']; ?>" name = idPartie>
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe1']; ?>" name = idEquipe1> 
+						<input type=hidden value="<?php echo $matchTournoi['idEquipe2']; ?>" name = idEquipe2>
+						<input class="btn btn-danger" type=submit value ="Supprimer ce match">
+					</form>
+					 <?php	
+				}
+				?>
 			</td>
 	<?php 
 		}
