@@ -67,3 +67,11 @@ function rechercheMatchTournoiM($nomEquipe,$idTournoi){
 	$req->execute(array('%' . $nomEquipe . '%', $idTournoi));
 	return $req;
 }
+
+function getTourPartie($idPartie){
+	$db = dbConnect();
+	$req = $db->prepare('SELECT tourPartie FROM Partie WHERE idPartie = ?');
+	$req->execute(array($idPartie));
+	$tour = $req->fetch();
+	return $tour['tourPartie'];
+}

@@ -139,6 +139,22 @@ function viewModifMatchTournoi(){
     $nbMatch4 = getNbMatch($idTournoi,4);
     $nbMatch2 = getNbMatch($idTournoi,2);
     $nbMatch1 = getNbMatch($idTournoi,1);
+    $tourPartie = getTourPartie($idPartie);
+    if($tourPartie == 16){
+    	$nbMatch16 = $nbMatch16-1;
+    }
+    else if($tourPartie == 8){
+    	$nbMatch8 = $nbMatch8-1;
+    }
+    else if($tourPartie == 4){
+    	$nbMatch4 = $nbMatch4-1;
+    }
+    else if($tourPartie == 2){
+    	$nbMatch2 = $nbMatch2-1;
+    }
+    else if($tourPartie == 1){
+    	$nbMatch1 = $nbMatch1-1;
+    }
 	include("view/modifMatchTournoi.php");
 
 	setEquipeDisqualif($perdantAncien);
